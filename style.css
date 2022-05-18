@@ -1,31 +1,58 @@
-* {
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,200&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
+body {
+    font-family: "Roboto Flex", sans-serif;
+    align-items: center;
+    text-align: center;
+    background-position: center;
+    background-color: #000;
 }
 
-body {
-    margin: 0;
-    font-family: Arial;
-    font-size: 17px;
+#about {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    padding: 40px 40px 40px 40px;
+    margin-top: 70px;
+    display: flex;
+    background: rgba(0, 0, 0, 0.486);
+    color: rgba(224, 224, 224, 0.425);
+    font-size: 40px;
+    border: solid 2px rgba(255, 127, 80, 0.2);
+    border-radius: 30px;
+}
+
+#avatar {
+    width: 40%;
+    height: 40%;
+    border-radius: 50%;
+    transition-duration: 0.2s;
+}
+
+#avatar:hover {
+    width: 41%;
+    height: 41%;
+    transition-duration: 0.2s;
 }
 
 #myVideo {
-    position: fixed;
+    position: absolute;
     right: 0;
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
+    opacity: 0.2;
 }
 
-.content {
-    position: fixed;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    color: #f1f1f1;
-    width: 100%;
-    padding: 20px;
+.container {
+    position: relative;
+    margin-top: 300px;
+    max-width: 850px;
+    margin: auto;
+    border-radius: 18px;
+    /* background: rgba(214, 214, 214, 0.5); */
 }
 
 #myBtn {
+    position: fixed;
     width: 200px;
     font-size: 18px;
     padding: 10px;
@@ -38,4 +65,21 @@ body {
 #myBtn:hover {
     background: #ddd;
     color: black;
+}
+
+.Social img {
+    height: 60px;
+    transition-duration: 0.1s;
+}
+
+.Social a {
+    opacity: 0.6;
+}
+
+.Social a:hover {
+    opacity: 1;
+}
+
+.Social img:hover {
+    transform: scale(1.1);
 }

@@ -4,9 +4,9 @@ var btn = document.getElementById("myBtn");
 function myFunction() {
     if (video.paused) {
         video.play();
-        btn.innerHTML = "Pause";
+        btn.innerHTML = "Стоп";
     } else {
         video.pause();
-        btn.innerHTML = "play";
+        btn.innerHTML = "Play";
     }
 }
