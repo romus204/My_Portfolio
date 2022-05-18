@@ -1,148 +1,41 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Koulen&display=swap");
+* {
+    box-sizing: border-box;
+}
+
 body {
-    text-align: center;
-    font-family: "Roboto", sans-serif;
-    background-color: rgb(66, 66, 66);
-    background: url(img/paporotnik.jpg);
-    background-size: 80%;
-    background-position: bottom center;
-}
-
-.container {
-    max-width: 850px;
-    margin: auto;
-    color: rgb(212, 212, 212);
-}
-
-a {
-    color: black;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-.Info {
-    display: flex;
-}
-
-.info-text {
-    margin-left: 20px;
-    font-size: 35px;
-    font-family: "Koulen", cursive;
-    color: rgb(210, 218, 207);
-}
-
-.info-text h1 {
-    margin-top: -20px;
-    margin-bottom: -20px;
-    margin-left: 25px;
-    font-size: 100px;
-    letter-spacing: 40px;
-}
-
-.info-text h3 {
-    margin-top: -60px;
-    margin-bottom: 5px;
-    letter-spacing: 5px;
-}
-
-.Avatar {
-    width: 30%;
-    height: 25%;
-    border-radius: 500px;
-    /*box-shadow: 4px 4px 9px rgb(99, 99, 99);*/
-    border: 3px solid rgba(204, 204, 204, 0.479);
-    animation: 1s trambling-animation;
-    animation-iteration-count: infinite;
-}
-
-.Social img {
-    height: 60px;
-}
-
-.Social a {
-    opacity: 0.6;
-}
-
-.Social a:hover {
-    opacity: 1;
-}
-
-.Social img:hover {
-    transform: scale(1.1);
-}
-
-.contact {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 15px 15px;
-    border-radius: 20px;
-}
-
-
-/* .connection-group label {
-    display: block;
-    margin-top: 20px;
-}
-
-.connection-group input,
-.connection-group textarea {
-    color: #ccc;
-    text-align: center;
-    width: 50%;
-    border: none;
-    border-bottom: 1px solid #ccc;
-    background: transparent;
-    padding: 15px 0px 10px;
-    outline: none;
-    font-family: inherit;
+    margin: 0;
+    font-family: Arial;
     font-size: 17px;
-    margin-top: 10px;
 }
 
-.btn {
-    background: rgb(58, 30, 30);
-    color: white;
-    padding: 10px 15px;
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+
+#myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
     cursor: pointer;
-    border-radius: 18px;
-    font: inherit;
-    margin-top: 20px;
 }
 
-.btn:hover {
+#myBtn:hover {
+    background: #ddd;
     color: black;
-    background-color: #ccc;
-} */
-
-.Avatar:hover {
-    border: 3px solid rgba(120, 255, 221, 0.4);
-}
-
-@media (max-width:850px) {
-    .Info {
-        display: block;
-    }
-    .bg-yellow {
-        margin-top: 10px;
-    }
-}
-
-.mouse-parallax {
-    height: 500px;
-    position: relative;
-    overflow: hidden;
-}
-
-.mouse-parallax-bg {
-    position: absolute;
-    background-image: url("img/cat1.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 110%;
-    height: 110%;
-    transition: all 0.1s ease;
 }
